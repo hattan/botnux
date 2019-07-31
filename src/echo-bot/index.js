@@ -50,3 +50,11 @@ server.post('/api/messages', (req, res) => {
         await myBot.run(context);
     });
 });
+
+server.get('/api/test', (req, res) => {
+   let data = {
+    appId: process.env.MicrosoftAppId,
+    appPassword: process.env.MicrosoftAppPassword
+    }
+   return res.json(data)
+});
