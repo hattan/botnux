@@ -78,7 +78,6 @@ echo "az webapp create --name $appName --plan $appName  -g $resourceGroup --runt
 az webapp create --name $appName --plan $appName  -g $resourceGroup --runtime "NODE|10.14"
 
 echo "\n************* Writing Application Settings for App Service ************* "
-az webapp config appsettings set -g $resourceGroup -n $appName --settings WEBSITE_NODE_DEFAULT_VERSION=10.14.1 
 az webapp config appsettings set -g $resourceGroup -n $appName --settings MicrosoftAppId=$spId
 az webapp config appsettings set -g $resourceGroup -n $appName --settings MicrosoftAppPassword=$spPassword
 az webapp config appsettings set -g $resourceGroup -n $appName --settings RunningEnvironment=LinuxAppService
