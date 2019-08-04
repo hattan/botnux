@@ -64,7 +64,7 @@ echo "\n************* Creating Service Principal ************* "
 echo "az ad app create --display-name $spName --password $spPassword --available-to-other-tenants"
 az ad app create --display-name $spName --password $spPassword --available-to-other-tenants
 
-echo "\n************* Getting Service Princial ID ************* "
+echo "\n************* Getting Service Principal  ID ************* "
 spId=$(az ad app list --display-name $spName --query [].appId --out tsv)
 echo "App Id = $spId"
 echo "spId=$spId" >> "configs.dat"
