@@ -7,8 +7,8 @@ resoureGroupLocation="westus"
 botName=$appName"BOT"
 spName=$appName"SP"
 spPassword=$(</dev/urandom tr -dc 'A-Za-z0-9!#$%&()*+,-./:;<=>?@[\]^_' | head -c 20  ; echo)"!2"
-deploymentUser="botnuxu0xgHDeploy"
-deploymentUserPassword="NE3+*;=BD#!SL;<kVKzg!2"
+deploymentUser=""
+deploymentUserPassword=""
 
 if [ -z "$deploymentUser"  ]
 then
