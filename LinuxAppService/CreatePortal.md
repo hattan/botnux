@@ -46,27 +46,29 @@ The easiest way to deploy your code is using git. An Azure App Service can be co
 * Fill in the options
 * Under endpoint, enter the url of your app service  followed by /api/messages. (Note it must be an https endpoint)
 
-<img src="bot_channges_reg_input.png" />
+<img src="images/bot_channels_reg_input.png" />
 
 ### Create MS AppId and Password
 
 After launching, go to Settings
 Grab the App Id
-
-<screen shot app id on bot serttings>
+<img src="images/app_id.png"/>
 
 Click Manage
-Add a new password
+<img src="images/manage_app_id.png"/>
 
-<screen shot adding new password>
+Add a new Client Secret
+<img src="images/client_secrets.png">
 
-### configure environment variables
+Note the newly created secret.
+
+### Configure environment variables on App Service
 Go back to your app service
 Go to configuration
 Enter three new Application Settings
-  MsAppId = App Id
-  MsAppPW = Password you created
-  RunningEnvironments = linux App Service
+  MsAppId = {{ App Id }}
+  MsAppPassword =  {{ Client Secret }}
+  RunningEnvironments = "linux App Service"
 
 <screen shot App settings>
 
