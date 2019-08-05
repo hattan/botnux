@@ -35,23 +35,22 @@ Once the deployment is complete and the app service has launched, we need to gra
 ### Deploy your code 
 The easiest way to deploy your code is using git. An Azure App Service can be configured to be a git remote. 
 
-* 
 
 ### Create Bot Service
 
 * Login to the Azure Portals and create a new Bot Service. 
 * Select the Channel Registrations Bot option.
 
-<screen shot channel reg bot selection>
+<img src="images/bot_channels_reg.png"/>
 
 * Fill in the options
 * Under endpoint, enter the url of your app service  followed by /api/messages. (Note it must be an https endpoint)
 
-<screen shot channel reg bot input>
+<img src="bot_channges_reg_input.png" />
 
 ### Create MS AppId and Password
 
-After launching, go to settings
+After launching, go to Settings
 Grab the App Id
 
 <screen shot app id on bot serttings>
