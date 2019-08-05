@@ -18,13 +18,13 @@ In the root of this repo is a [src/echo-bot](../src/echo-bot) folder which conta
 
 ### References
 
-[az ad app - reference](https://docs.microsoft.com/en-us/cli/azure/ad/app?view=azure-cli-latest)
-[az webapp deployment](https://docs.microsoft.com/en-us/cli/azure/webapp/deployment?view=azure-cli-latest)
-[Create a Node.js web app in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs)
-[Local Git deployment to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/deploy-local-git)
-[Create an App Service app and deploy code from a local Git repository using Azure CLI](https://docs.microsoft.com/en-us/azure/app-service/scripts/cli-deploy-local-git?toc=%2fcli%2fazure%2ftoc.json)
-[Tutorial: Build a custom image and run in App Service from a private registry](https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-custom-docker-image)
-[https://microsoft.github.io/AzureTipsAndTricks/blog/tip19.html](https://microsoft.github.io/AzureTipsAndTricks/blog/tip19.html)
+* [az ad app - reference](https://docs.microsoft.com/en-us/cli/azure/ad/app?view=azure-cli-latest)
+* [az webapp deployment](https://docs.microsoft.com/en-us/cli/azure/webapp/deployment?view=azure-cli-latest)
+* [Create a Node.js web app in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs)
+* [Local Git deployment to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/deploy-local-git)
+* [Create an App Service app and deploy code from a local Git repository using Azure CLI](https://docs.microsoft.com/en-us/azure/app-service/scripts/cli-deploy-local-git?toc=%2fcli%2fazure%2ftoc.json)
+* [Tutorial: Build a custom image and run in App Service from a private registry](https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-custom-docker-image)
+* [https://microsoft.github.io/AzureTipsAndTricks/blog/tip19.html](https://microsoft.github.io/AzureTipsAndTricks/blog/tip19.html)
 
 
 
