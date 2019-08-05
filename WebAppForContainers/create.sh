@@ -57,7 +57,7 @@ az webapp create --resource-group $resourceGroup --plan $appName --name $appName
 echo "\n************* Writing Application Settings for App Service ************* "
 az webapp config appsettings set -g $resourceGroup -n $appName --settings MicrosoftAppId=$spId
 az webapp config appsettings set -g $resourceGroup -n $appName --settings MicrosoftAppPassword=$spPassword
-az webapp config appsettings set -g $resourceGroup -n $appName --settings RunningEnvironment=LinuxAppService
+az webapp config appsettings set -g $resourceGroup -n $appName --settings RunningEnvironment=DockerContainer
 
 echo "\n************* Fetching App Service Url ************* "
 appServiceUrl=$(az webapp show --name $appName --resource-group $resourceGroup --query hostNames[0] --out tsv)

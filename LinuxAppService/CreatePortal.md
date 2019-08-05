@@ -32,9 +32,26 @@ Once the deployment is complete and the app service has launched, we need to gra
 
 <img src="images/app_service_url.png" />
 
+### Create a deployment user
+`
+  ```az webapp deployment user set --user-name <username> --password <password>```
+
+
+
 ### Deploy your code 
 The easiest way to deploy your code is using git. An Azure App Service can be configured to be a git remote. 
 
+``` az webapp deployment source config-local-git --name linux-bot-hattan --resource-group linux_app_test --query url --output tsv ```
+
+Note the url that gets returned.
+
+```git init
+git add -A
+git commit -m "initial"
+git remote add azure <url from above>
+git push azure master
+(when prompted enter password for the deployment user)
+```
 
 ### Create Bot Service
 
@@ -63,16 +80,16 @@ Add a new Client Secret
 Note the newly created secret.
 
 ### Configure environment variables on App Service
-Go back to your app service
-Go to configuration
+Go back to your app service.
+Go to Configuration on the left menu.
 Enter three new Application Settings
   * MicrosoftAppId = {{ App Id }}
   * MicrosoftAppPassword =  {{ Client Secret }}
   * RunningEnvironment = "linux App Service"
 
-<screen shot App settings>
+<img src="images/application_settings.png" />
 
-Click save
+Click Save
 
 
 ### Test Bot
@@ -80,7 +97,7 @@ Go back to to your bot service
 go to Test in WebChat
 Enter a message for your bot, you should see a response!
 
-<screen shot Bot Running in Azure>
+<img src="images/running_bot_appservice.png">
 
 ### Summary
 In this walkthrough , you were introduced to running a bot on a Linux App Service.
