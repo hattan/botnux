@@ -66,9 +66,9 @@ Note the newly created secret.
 Go back to your app service
 Go to configuration
 Enter three new Application Settings
-  MsAppId = {{ App Id }}
-  MsAppPassword =  {{ Client Secret }}
-  RunningEnvironments = "linux App Service"
+  * MicrosoftAppId = {{ App Id }}
+  * MicrosoftAppPassword =  {{ Client Secret }}
+  * RunningEnvironment = "linux App Service"
 
 <screen shot App settings>
 
